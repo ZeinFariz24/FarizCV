@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- infomation of website -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="project-base" />
+    <meta name="author" content="project-base" />
+
+    <!-- title -->
+    <title>Project - Base</title>
+
+    <!-- style -->
+    <link href="./css/css/all.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="./css/aos.css" rel="stylesheet" crossorigin="anonymous" />
+    <link
+      href="./css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="./css/style.css" rel="stylesheet" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-transparent fixed-top"
+      id="navbarIndex"
+    >
+      <div
+        class="container-fluid mx-3 mx-sm-5 px-3 px-sm-3 py-2 py-sm-2 bg-body-tertiary rounded shadow-sm"
+        id="navbarContainer"
+      >
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          role="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand mx-2" href="index.html">Fariz Fadlilah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container-fluid"></div>
+          <ul class="navbar-nav nav-pills ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end bg-secondary-subtle">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ navigation -->
+
+    <!-- sidebar -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+      style="--bs-offcanvas-width: 250px"
+    >
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav nav-underline justify-content-end flex-grow-1 mt-3 pe-3 overflow-x-auto"
+        >
+          <li class="nav-item mb-3">
+            <div class="text-muted">Interface</div>
+            <a class="nav-link" href="./index.html"
+              ><i class="fa-solid fa-home"></i>&nbsp;Home</a
+            >
+            <a class="nav-link" href="./dashboard.html"
+              ><i class="fa-solid fa-gauge"></i>&nbsp;Dasboard</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <div class="text-muted">Core</div>
+            <!-- header -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Header
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ header -->
+
+            <!-- about -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              About
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ about -->
+
+            <!-- services -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Services
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ services -->
+
+            <!-- skill -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Skill
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ skill -->
+
+            <!-- experience -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Experience
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ experience -->
+
+            <!-- result -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Result
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ result -->
+
+            <!-- coorporation -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Coorporation
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ coorporation -->
+
+            <!-- contact -->
+            <a
+              class="nav-link navbar dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-database"></i
+              ></span>
+              Contact
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+            <!--/ contact -->
+          </li>
+
+          <li class="nav-item dropdown my-3">
+            <div class="text-muted">User</div>
+            <a
+              class="nav-link navbar dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="text-muted"
+                ><i class="fa-solid fa-user-gear"></i
+              ></span>
+              Databese item
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+              <li><a class="dropdown-item" href="#">dropdown-menu1</a></li>
+              <li><a class="dropdown-item" href="#">dropdown-menu2</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">dropdown-menu3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--/ sidebar -->
+
+    <!-- dashboard -->
+    <div
+      class="container-fluid px-3 px-sm-5 pt-5 pt-sm-5 pb-4 pb-sm-4"
+      id="dashboard"
+      style="min-height: max-content"
+    >
+      <div
+        class="container-fluid g-0 mt-4 mt-sm-4 p-3 p-sm-3 justify-content-center align-items-center overflow-hidden rounded-5 shadow"
+      >
+        <!-- dashboard-content -->
+        <h1 class="display-6">Dashboard</h1>
+        <ol class="breadcrumb mb-3">
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-3">
+              <div class="card-body">Primary Card</div>
+              <div
+                class="card-footer d-flex align-items-center justify-content-between"
+              >
+                <a class="small text-white stretched-link" href="#"
+                  >View Details</a
+                >
+                <div class="small text-white">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-3">
+              <div class="card-body">Warning Card</div>
+              <div
+                class="card-footer d-flex align-items-center justify-content-between"
+              >
+                <a class="small text-white stretched-link" href="#"
+                  >View Details</a
+                >
+                <div class="small text-white">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-3">
+              <div class="card-body">Success Card</div>
+              <div
+                class="card-footer d-flex align-items-center justify-content-between"
+              >
+                <a class="small text-white stretched-link" href="#"
+                  >View Details</a
+                >
+                <div class="small text-white">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white mb-3">
+              <div class="card-body">Danger Card</div>
+              <div
+                class="card-footer d-flex align-items-center justify-content-between"
+              >
+                <a class="small text-white stretched-link" href="#"
+                  >View Details</a
+                >
+                <div class="small text-white">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-area me-1"></i>
+                Title
+              </div>
+              <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="40"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar me-1"></i>
+                Title
+              </div>
+              <div class="card-body">
+                <canvas id="myBarChart" width="100%" height="40"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--/ dashboard-content -->
+      </div>
+    </div>
+    <!--/ dashboard -->
+
+    <!-- footer -->
+    <div
+      class="container-fluid px-3 px-sm-5 pt-3 pt-sm-3"
+      id="footer"
+      style="min-height: max-content"
+    >
+      <h5 class="fs-6 lead mt-3 mt-sm-3 py-3 py-sm-3 text-center border-top">
+        &copy; 2026 Fariz Fadlilah. All rights reserved.
+      </h5>
+    </div>
+    <!--/ footer -->
+
+    <!-- float -->
+    <div class="position-fixed bottom-0 end-0 mb-5 me-3 text-end">
+      <a
+        class="btn btn-success"
+        type="button"
+        role="button"
+        href="https://api.whatsapp.com/send?phone=82137700673&text=Halo%21%20Fariz.%20Saya ingin .....%20"
+        ><i class="fa-brands fa-whatsapp fa-xl"></i
+      ></a>
+      <div class="dropdown my-2">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i
+            class="fa-solid fa-cloud-sun theme-icon-active"
+            data-theme-icon-active="fa-cloud-sun"
+          ></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <button
+              class="dropdown-item"
+              type="button"
+              data-bs-theme-value="light"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-sun" data-theme-icon="fa-sun"></i>
+              &nbsp;Light
+            </button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item"
+              type="button"
+              data-bs-theme-value="dark"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-moon" data-theme-icon="fa-moon"></i>
+              &nbsp;Dark
+            </button>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <button
+            class="dropdown-item"
+            type="button"
+            data-bs-theme-value="auto"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-cloud-sun" data-theme-icon="fa-cloud-sun"></i>
+            &nbsp;Auto
+          </button>
+        </ul>
+      </div>
+      <a class="btn btn-secondary" href="#dashboard"
+        ><i class="fa-solid fa-caret-up"></i
+      ></a>
+    </div>
+    <!--/ float -->
+
+    <!-- brain of website -->
+    <script src="./js/js/all.js" crossorigin="anonymous"></script>
+    <script src="./js/aos.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./js/masonry.pkgd.min.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery4.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" crossorigin="anonymous"></script>
+    <!--/ brain of website -->
+
+    <!-- run of AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <!--/ run of AOS -->
+  </body>
+</html>
